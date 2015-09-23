@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /carrick-parish-org
+exclude: ['README.md']
