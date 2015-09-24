@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /carrick-parish-org
 exclude: ['README.md']
+encoding: utf-8
