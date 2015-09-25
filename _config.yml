@@ -37,7 +37,7 @@ improve_content: https://github.com/eperito/carrick-parish-org/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://github.com/eperito/carrick-parish-org/images/'
+urlimg: 'https://github.com/eperito/carrick-parish-org/tree/gh-pages/images/'
 
 
 # Logo size is 600x80 pixels
