@@ -1,0 +1,21 @@
+
+        <div style="float:left;">
+            <br />
+            <img src="images/FB-f-Logo__blue_29.png" alt="Follow us on Facebook" style="padding-right:1.8em;" />
+            <br/>
+            <br />Parish Email: <a href="mailto:pp_carrickparish@live.co.uk">pp_carrickparish@live.co.uk</a>
+            <br/>For website matters only, email <a href="mailto:editor@carrickparish.org">editor@carrickparish.org</a>
+            <br/>And remember you can leave a comment on the Guestbook page of this website.</div>
+        <div style="float:right;">
+            <ul>
+                <li><a href="http://www.carrickferguschurchforum.org">InterChurch</a></li>
+                <li><a href="http://www.jesuit.ie/prayer/">Sacred Space</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </div>
+        <div style="float:right;">
+            <ul>
+                <li><a href="mass_times.html">Mass Times</a></li>
+                <li><a href="links.html">Links</a></li>
+            </ul>
+        </div>

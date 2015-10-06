@@ -1,0 +1,35 @@
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCarrickCanvas = document.getElementById('map-canvas-carrick');
+            var mapWhiteheadCanvas = document.getElementById('map-canvas-whitehead');
+            var myCarrickLatlng = new google.maps.LatLng(54.714852, -5.815421);
+            var myWhiteheadLatlng = new google.maps.LatLng(54.750960, -5.713301);            
+
+            var mapCarrickOptions = {
+                center: myCarrickLatlng,
+                zoom: 17,
+                streetViewControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var mapWhiteheadOptions = {
+                center: myWhiteheadLatlng,
+                zoom: 17,
+                streetViewControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var mapCarrick = new google.maps.Map(mapCarrickCanvas, mapCarrickOptions);
+            var mapWhitehead = new google.maps.Map(mapWhiteheadCanvas, mapWhiteheadOptions);
+            var markerCarrick = new google.maps.Marker({
+                position: myCarrickLatlng,
+                map: mapCarrick,
+                title: "St Nicholas' Church"
+            });
+            var markerWhitehead = new google.maps.Marker({
+                position: myWhiteheadLatlng,
+                map: mapWhitehead,
+                title: "Our Lady of Lourdes Church"
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>

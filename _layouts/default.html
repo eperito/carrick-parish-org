@@ -1,24 +1,22 @@
----
-layout: compress
----
 <!doctype html>
-<html class="no-js" lang="{% if site.language == nil %}en{% else %}{{ site.language }}{% endif %}">
+<html lang="en">
+
 <head>
-	{% include head %}
+    {% include head.html %}
+    {% if page.title == "Location" %}
+    {% include google_maps.html %}
+    {% endif %}
 </head>
-<body id="top-of-page" class="{{ page.format }}">
-	{% unless page.skip_boilerplate %}
-	{% include navigation %}
-	{% endunless %}
 
-	{% include masthead %}
-
-	{{ content }}
-
-	{% unless page.skip_boilerplate %}
-	{% include footer %}
-	{% endunless %}
-
-	{% include footer_scripts %}
+<body>
+    <header>
+        {% include navigation.html %}
+        <h1><a href="index.html"><img src="images/parish_logo.png" alt="Carrickfergus Parrish" /></a></h1>
+    </header>
+    {{content}}
+    <footer>
+    {% include footer.html %}
+    </footer>
 </body>
+
 </html>
