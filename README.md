@@ -1,4 +1,4 @@
 # carrick-parish-org
 Carrickfergus Parish Website
 
-[a link](http://eperito.github.io/carrick-parish-org/)
+[demo website](http://eperito.github.io/carrick-parish-org/)
