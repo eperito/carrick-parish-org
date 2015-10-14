@@ -3,7 +3,7 @@
 
 <head>
         <meta charset="UTF-8">
-    <title>Location</title>
+    <title>Locations</title>
     <link rel="stylesheet" href="css/styles.css" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,42 +11,6 @@
     <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var mapCarrickCanvas = document.getElementById('map-canvas-carrick');
-            var mapWhiteheadCanvas = document.getElementById('map-canvas-whitehead');
-            var myCarrickLatlng = new google.maps.LatLng(54.714852, -5.815421);
-            var myWhiteheadLatlng = new google.maps.LatLng(54.750960, -5.713301);            
-
-            var mapCarrickOptions = {
-                center: myCarrickLatlng,
-                zoom: 17,
-                streetViewControl: true,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var mapWhiteheadOptions = {
-                center: myWhiteheadLatlng,
-                zoom: 17,
-                streetViewControl: true,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-            var mapCarrick = new google.maps.Map(mapCarrickCanvas, mapCarrickOptions);
-            var mapWhitehead = new google.maps.Map(mapWhiteheadCanvas, mapWhiteheadOptions);
-            var markerCarrick = new google.maps.Marker({
-                position: myCarrickLatlng,
-                map: mapCarrick,
-                title: "St Nicholas' Church"
-            });
-            var markerWhitehead = new google.maps.Marker({
-                position: myWhiteheadLatlng,
-                map: mapWhitehead,
-                title: "Our Lady of Lourdes Church"
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     
 </head>
 
@@ -74,18 +38,14 @@
 
         <h1><a href="index.html"><img src="images/parish_logo.png" alt="Carrickfergus Parrish" /></a></h1>
     </header>
-        <article>
-        <table>
-            <tr>
-                <td>
-                    <div id="map-canvas-carrick"></div>
-                </td>
-                <td>
-                    <div id="map-canvas-whitehead"></div>
-                </td>
-            </tr>
-        </table>
-    </article>
+    <article>
+    <h2>Locations</h2>
+    <h3>Carrickfergus</h3>
+    <div id="map-canvas-carrick"></div>
+    <br />
+    <h3>Whitehead</h3>
+    <div id="map-canvas-whitehead"></div>
+</article>
 
 
     <footer>
