@@ -10,8 +10,10 @@
 
 <body>
     <header>
-        {% include navigation.html %}
-        <h1><a href="index.html"><img src="images/parish_logo.png" alt="Carrickfergus Parrish" /></a></h1>
+        <div class="headerContent">
+            {% include navigation.html %}
+            <h1><a href="index.html"><img src="images/parish_logo.png" alt="Carrickfergus Parrish" /></a></h1>
+        </div>
     </header>
     {{content}}
     <footer>
