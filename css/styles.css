@@ -7,55 +7,40 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* Body */
 
-html,
 body {
-    font-size: 16px
-}
-
-body {
-    background: #fdfdfd;
+    background: #fff;/*#ccddcd;*/
     color: #111;
-    padding: 0;
-    margin: 0;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1.5;
     position: relative;
-    cursor: auto
-}
-
-header {
-    background-color: #fff;
-	width: 100%;
-	height: 117px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
-
+    cursor: auto;
 }
 
 /* Headings */
 
 h1 {
-    font-size: 2.441em
+    font-size: 2.441em;
 }
 
 h2 {
-    font-size: 1.953em
+    font-size: 1.953em;
+    color: cadetblue;
 }
 
 h3 {
-    font-size: 1.375rem
+    font-size: 1.375rem;
+    padding-top: inherit;
+    color: cornflowerblue;
 }
 
 h4 {
-    font-size: 1.25em
+    font-size: 1.25em;
 }
 
 h5 {
-    font-size: 1.152em
+    font-size: 1.152em;
 }
 
 /* Anchors */
@@ -184,6 +169,7 @@ tfoot th {}
 
 tfoot td {}
 
+/*
 aside
 {
     float: right;
@@ -193,23 +179,44 @@ aside
     font-size: 87.5%;
     align-content: center;
     margin: 120px auto 40px;
-}
+}*/
+/*
 header{
-    padding: 0.8em;
+    padding: 1.8em;
+    width:1105px;
+}*/
+header
+{
+    width:1105px;
+    margin: 0px auto;
+    color: #fff;
+}
+.headerContent {
+    background-color:#fff;
+    padding:20px 20px;
+    width: 1105px
 }
 article
 {
-    margin: 120px auto 40px;
-    padding: 1.8em;
-    overflow: auto;
+    background-color:#fff;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width:1105px;
+}
+.footerContent {
+    float:left;
+    background-color:#333;
+    padding:20px 20px;
+    width: 1105px
 }
 footer
 {
-    /*color: #aaa;
-    background-color: #50c743;*/
-    border-top: 4px solid #4C9CF1;
-    padding: 1.8em;
-    
+    width:1105px;
+    margin:auto;
+    color: #ccddcd;
+    text-rendering: optimizeLegibility;
+    font-size: 90%;
 }
 footer ul {
     list-style: square outside none;
@@ -220,6 +227,12 @@ footer ul li {
 }
 footer a {
     text-decoration: none;
+    color: #fff;
+}
+footer p {
+    float:left;
+    width:100%;
+    text-align:left;
 }
 nav {
     background-color: #4C8FEC;
@@ -345,3 +358,4 @@ a:hover#menu-icon {
 
 	}
 }
+
