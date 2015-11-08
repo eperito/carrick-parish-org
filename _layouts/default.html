@@ -4,20 +4,18 @@
 <head>
     {% include head.html %}
     {% if page.title == "Locations" %}
-    {% include google_maps.html %}
+        {% include google_maps.html %}
     {% endif %}
 </head>
 
 <body>
     <header>
-        <div class="headerContent">
-            {% include navigation.html %}
-            <h1><a href="index.html"><img src="images/parish_logo.png" alt="Carrickfergus Parrish" /></a></h1>
-        </div>
+        {% include navigation.html %}
     </header>
     {{content}}
+    <br /><br />
     <footer>
-    {% include footer.html %}
+        {% include footer.html %}
     </footer>
 </body>
 
