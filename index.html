@@ -3,62 +3,57 @@ layout: default
 title: Carrickfergus Parish Official WebSite
 ---
 <article>
-    <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
 
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-    <div class="item active">
-        <img src="images/carousel0.jpg" alt="Carrickfergus Parish">
-        <div class="carousel-caption">
-            <h3>Carrickfergus Parish</h3>
-            <p>We are a Christian community of the Catholic tradition located in East Antrim, Northern Ireland, on the shore of Belfast Lough, half way between the ports of Larne and Belfast.</p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/carousel0.jpg" alt="Carrickfergus Parish">
+                <div class="carousel-caption">
+                    <h3>Carrickfergus Parish</h3>
+                    <p>We are a Christian community of the Catholic tradition located in East Antrim, Northern Ireland, on the shore of Belfast Lough, half way between the ports of Larne and Belfast.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/carousel1.jpg" alt="Carrickfergus Parish">
+                <div class="carousel-caption">
+                    <h3>Carrickfergus Parish</h3>
+                    <p>Text goes here.Text goes here.Text goes here.Text goes here.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="images/carousel2.jpg" alt="I am the vine">
+                <div class="carousel-caption">
+                    <h3>I am the vine</h3>
+                    <p>&quot;I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.&quot;<em>- (Words of <cite title="Jesus">Jesus</cite> recorded in John's Gospel, chapter 15)</em>
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
-    <div class="item">
-        <img src="images/carousel1.jpg" alt="Carrickfergus Parish">
-        <div class="carousel-caption">
-            <h3>Carrickfergus Parish</h3>
-            <p>Text goes here.Text goes here.Text goes here.Text goes here.</p>
-        </div>
-    </div>
-
-    <div class="item">
-        <img src="images/carousel2.jpg" alt="I am the vine">
-        <div class="carousel-caption">
-            <h3>I am the vine</h3>
-            <p>&quot;I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit; apart from me you can do nothing.&quot;<br />
-            <em>- (Words of <cite title="Jesus">Jesus</cite> recorded in John's Gospel, chapter 15)</em>
-            </p>
-        </div>
-    </div>
-</div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Our Aim and Purpose is to be:</h3>
-                <ul>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Our Aim and Purpose is to be:</h3>
+            <ul>
                 <li>a community with Jesus as its centre.</li>
                 <li>a people committed to spreading His kingdom (<a href="spreading_the_kingdom.html">more</a>)</li>
                 <li>a community where each person feels he or she belongs and has a role to play.</li>
@@ -69,15 +64,15 @@ title: Carrickfergus Parish Official WebSite
                 <li>people with a heart for unity in diversity among all people, especially within the Christian family.</li>
                 <li>a source and channel of justice, peace, hope and love in a hurting world.</li>
             </ul>
-            </div>
-            <div class="col-md-6">
-                <br />
-                <p>We believe that together, this is a life worth living, a cause worth following. There is much to be and much to do ........ JOIN WITH US in making this a reality!</p>
-                <h3>What we believe: <a href="what_we_believe.html">Click here</a></h3>
-                <p>
-                    We hope you enjoy your visit to our website and we welcome any feedback.
-                </p>
-            </div>
-        {% include modal_i_am_the_vine.html %}
         </div>
+        <div class="col-md-6">
+            <br />
+            <p>We believe that together, this is a life worth living, a cause worth following. There is much to be and much to do ........ JOIN WITH US in making this a reality!</p>
+            <h3>What we believe: <a href="what_we_believe.html">Click here</a></h3>
+            <p>
+                We hope you enjoy your visit to our website and we welcome any feedback.
+            </p>
+        </div>
+        {% include modal_i_am_the_vine.html %}
+
 </article>
