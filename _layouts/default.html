@@ -2,21 +2,42 @@
 <html lang="en">
 
 <head>
-    {% include head.html %}
-    {% if page.title == "Locations" %}
-        {% include google_maps.html %}
-    {% endif %}
+    {% include head.html %} {% if page.title == "Locations" %} {% include google_maps.html %} {% endif %}
 </head>
 
 <body>
     <header>
         {% include navigation.html %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="index.html">
+                        <img src="/images/parish_logo.svg" style="height:140px;" alt="Welcome to Carrickfergus Parish" onfocus="blur()" />
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <h3>St Nicholas' Church</h3>
+                    <b>CARRICKFERGUS</b>
+                    <br />Vigil Mass Saturday 6:00pm
+                    <br />Sunday 11:30am
+                    <br />(No Sunday evening Mass)
+                </div>
+                <div class="col-md-4">
+                    <h3>Our Lady of Lourdes</h3>
+                    <b>WHITEHEAD</b>
+                    <br />Sunday 9:00am
+                    <br />(No Saturday Vigil or Sunday evening Mass)
+                    <p><a href="prayers_for_mass.html">Prayers for Mass</a></p>
+                </div>
+            </div>
+            <br />
+        </div>
     </header>
     <div class="container">
         {{content}}
+        <br />
+        <br />
     </div>
-    <br />
-    <br />
     <footer>
         {% include footer.html %}
     </footer>
