@@ -6,7 +6,7 @@
 
 footer
 {
-    background-color:#015675;
+    background-color: #017599; /*#015675;*/
     color: #ccddcd;
     text-rendering: optimizeLegibility;
     font-size: 90%;
@@ -35,4 +35,34 @@ footer a {
 h2 {
     text-transform: uppercase;
 }
+
+.navbar {
+ /* position: relative;
+  margin-bottom: 5px;*/
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 1.1em;
+}
+
+.navbar li
+{
+    /*margin-top: 20px;*/
+}
+
+.navbar .nav > li > a , .navbar .nav > li > a {
+    color:aliceblue;          /*#02bcff;*/
+    background-color: #017599;
+    text-shadow:    none;
+}
+
+.nav-link
+{
+    /*margin-top: 70px;*/
+}
+
+.logo
+{
+
+}
+
 
