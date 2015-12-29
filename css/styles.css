@@ -9,7 +9,6 @@ footer
     background-color: #017599; /*#015675;*/
     color: #ccddcd;
     text-rendering: optimizeLegibility;
-    font-size: 90%;
 }
 footer ul {
     list-style: square outside none;
@@ -41,7 +40,7 @@ h2 {
   margin-bottom: 5px;*/
   border: 1px solid transparent;
   background-color: transparent;
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 
 .navbar li
@@ -53,6 +52,8 @@ h2 {
     color:aliceblue;          /*#02bcff;*/
     background-color: #017599;
     text-shadow:    none;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .nav-link
