@@ -1,0 +1,8 @@
+<h3>Weekly Bulletin</h3>
+{% for file in site.static_files reversed %}{% if file.path contains '/bulletins/' %}
+<section>{% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
+    <h4>Week commencing Sunday {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ file.path | date: '%B' }} {{ file.path | date: '%Y' }}</h4>
+    <h4>({{fs[3] | | remove: file.extname}})</h4>
+    <button type="button" class="btn btn-success"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">LATEST BULLETIN (PDF)</a></button>
+</section>{% break %}{% endif %}{% endfor %}
+<br />

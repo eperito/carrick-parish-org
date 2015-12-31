@@ -1,14 +1,11 @@
 <div class="container">
     <br />
-    <br />
     <div class="row">
         <div class="col-md-6">
             <span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="mass_times.html">Mass Times</a>
             <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="words_of_wisdom.html">Wisdom</a>
-            <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="links.html">Links</a>
             <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="history.html">History</a>
-            <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.carrickferguschurchforum.org">InterChurch</a>
-            <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="http://www.jesuit.ie/prayer/">Sacred Space</a>
+            <br /><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;<a href="links.html">More Links</a>
             <br />
             <br />
             <br />
@@ -27,6 +24,18 @@
             <br />For website matters only, email <a href="mailto:editor@carrickparish.org">editor@carrickparish.org</a>
             <br />And remember you can leave a comment on the Facebook page.
             <br />
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            {% assign parish = site.data.parish %}
+            <p style="text-align:center;">Parish Halls available for hire (Carrickfergus &amp; Whitehead). Tel: {{parish.hallhire.telephone}}</p>
+        </div>
+        <div class="col-md-2">
         </div>
     </div>
 </div>
