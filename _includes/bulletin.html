@@ -1,8 +1,31 @@
-<h3>Weekly Bulletin</h3>
-{% for file in site.static_files reversed %}{% if file.path contains '/bulletins/' %}
-<section>{% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
-    <h4>Week commencing Sunday {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ file.path | date: '%B' }} {{ file.path | date: '%Y' }}</h4>
-    <h4>({{fs[3] | | remove: file.extname}})</h4>
-    <button type="button" class="btn btn-success"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">LATEST BULLETIN (PDF)</a></button>
-</section>{% break %}{% endif %}{% endfor %}
-<br />
+<span align="center">
+    <img src="/images/bulletin_logo.svg" alt="Weekly Bulletin" height="40px" style="margin-top:25px;margin-bottom:12px;" />
+    <div class="btn-group">
+        {% for file in site.static_files reversed %}{% if file.path contains '/bulletin/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
+         <!--<p>(Posted Sunday {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ file.path | date: '%B' }} {{ file.path | date: '%Y' }})</p>-->
+        <button type="button" class="btn btn-success"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">Weekly Bulletin (PDF)</a></button>{% break %}{% endif %}{% endfor %}<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+        <ul class="dropdown-menu">
+            {% for file in site.static_files reversed %}{% if file.path contains '/bulletin/' limit:3 %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
+            <li><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">{{fs[3] | | remove: file.extname}}</a></li>
+            {% endif %}{% endfor %}
+        </ul>
+    </div>
+</span>
+
+<!--
+<span align="center">
+    <img src="/images/bulletin_logo.svg" alt="Weekly Bulletin" height="40px" />
+    <div class="btn-group">
+        {% for file in site.static_files reversed %}{% if file.path contains '/bulletin/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
+        <h4>(Posted Sunday {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ file.path | date: '%B' }} {{ file.path | date: '%Y' }})</h4>
+        <button type="button" class="btn btn-success"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">Weekly Bulletin (PDF)</a></button>
+        {% break %}{% endif %}{% endfor %}
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+        <ul class="dropdown-menu">
+            {% for file in site.static_files reversed %}{% if file.path contains '/bulletin/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
+            <li><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">{{ file.path | date: '%B' }} {{ file.path | date: '%Y' }}</a></li>
+            {% endif %}{% endfor %}
+        </ul>
+    </div>
+</span>
+-->
