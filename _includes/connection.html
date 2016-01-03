@@ -3,12 +3,12 @@
     <br />
     <div class="btn-group">
         {% for file in site.static_files reversed %}{% if file.path contains '/connection/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
-        <button type="button" class="btn btn-info"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">{{fs[3] | | remove: file.extname}} (PDF)</a></button>
+        <button type="button" class="btn btn-info"><a href="http://carrickparish.org{{file.path}}" style="color:aliceblue;">{{fs[3] | | remove: file.extname}} (PDF)</a></button>
         {% break %}{% endif %}{% endfor %}
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
         <ul class="dropdown-menu">
             {% for file in site.static_files reversed %}{% if file.path contains '/connection/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
-            <li><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">{{ file.path | date: '%B' }} {{ file.path | date: '%Y' }}</a></li>
+            <li><a href="http://carrickparish.org{{file.path}}" style="color:aliceblue;">{{ file.path | date: '%B' }} {{ file.path | date: '%Y' }}</a></li>
             {% endif %}{% endfor %}
         </ul>
     </div>
