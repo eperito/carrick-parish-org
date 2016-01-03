@@ -1,5 +1,5 @@
 <span align="center">
-    <img src="/images/bulletin_logo.svg" alt="Weekly Bulletin" height="40px" style="margin-top:25px;margin-bottom:12px;" />
+    <img src="images/bulletin_logo.svg" alt="Weekly Bulletin" height="40px" style="margin-top:25px;margin-bottom:12px;" />
     <div class="btn-group">
         {% for file in site.static_files reversed %}{% if file.path contains '/bulletin/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
          <!--<p>(Posted Sunday {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} {{ file.path | date: '%B' }} {{ file.path | date: '%Y' }})</p>-->

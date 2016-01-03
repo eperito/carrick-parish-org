@@ -1,5 +1,5 @@
 <span align="center">
-    <img src="/images/theconnection_white.svg" alt="the Connection" height="80px" />
+    <img src="images/theconnection_white.svg" alt="the Connection" height="80px" />
     <div class="btn-group">
         {% for file in site.static_files reversed %}{% if file.path contains '/connection/' %} {% assign fs = file.path | split: '-' %} {% assign d = file.path | date: "%-d" %}
         <button type="button" class="btn btn-info"><a href="http://eperito.github.io/carrick-parish-org{{file.path}}" style="color:aliceblue;">{{fs[3] | | remove: file.extname}} (PDF)</a></button>
