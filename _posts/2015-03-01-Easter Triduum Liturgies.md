@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Easter Triduum Liturgies
 ---
 <article>

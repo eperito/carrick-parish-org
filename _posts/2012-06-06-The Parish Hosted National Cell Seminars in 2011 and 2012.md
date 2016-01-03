@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Parish Hosted National Cell Seminars in 2011 and 2012
 ---
 <article>

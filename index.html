@@ -67,11 +67,10 @@ title: Carrickfergus Parish Official WebSite
                 <br />
             </div>
             <div class="col-md-4" align="center">
-                <!--<h3><span class="glyphicon glyphicon-time" aria-hidden="true"></span></h3>-->
                 <img src="images/mass_logo.svg" alt="Mass Times" height="60px" />
                 <br />
                 <br />
-                <button type="button" class="btn btn-warning"><a href="/mass_times.html" style="color:aliceblue;">Sunday Mass Times</a></button>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal_mass_times">Sunday Mass Times</button>
                 <br />
                 <br />
             </div>
@@ -81,10 +80,8 @@ title: Carrickfergus Parish Official WebSite
                 <br />
             </div>
         </div>
-        <!--
-    <h3>Normal Sunday Mass Times</h3>
-    <h4>(Permanent Post)</h4>{% include mass_times.html %}-->
     </div>
+    {% include modal_mass_times.html %}
     <br />
     <div class="row">
         <div class="col-md-6">
