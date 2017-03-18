@@ -1,22 +1,32 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    {% include head.html %} {% if page.title == "Locations" %} {% include google_maps.html %} {% endif %}
-</head>
-
-<body>
-    <header>
-        {% include navigation.html %}
-    </header>
-    <div class="container">
-        {{content}}
+    <head>
+        {% include head.html %} {% if page.title == "Locations" %} {% include google_maps.html %} {% endif %}
+    </head>
+    <body>
+        <header>
+            {% include navigation.html %}
+        </header>
+        <div class="container">
+            {{content}}
+            <br />
+            <br />
+        </div>
+        <footer>
+            {% include footer.html %}
+        </footer>
         <br />
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                {% assign parish = site.data.parish %}
+                <p style="text-align:center;">For website matters only, email <a href="mailto:editor@carrickparish.org">editor@carrickparish.org</a> and remember you can leave a comment on the Facebook page.<br />Parish Halls available for hire (Carrickfergus &amp; Whitehead).
+                    <!-- Tel: {{parish.hallhire.telephone}}--></p>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
         <br />
-    </div>
-    <footer>
-        {% include footer.html %}
-    </footer>
-</body>
-
+    </body>
 </html>
