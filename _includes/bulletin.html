@@ -3,7 +3,7 @@
     <img src="images/bulletin_logo.svg" alt="Weekly Bulletin" height="38px" style="margin-top:25px;margin-bottom:18px;" />
     <br />
     <div class="btn-group">
-        <button type="button" class="btn btn-success"><a href="http://carrickparish.org{{file.last.path}}" style="color:aliceblue;">Weekly Bulletin (PDF)</a></button><button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+        <button type="button" class="btn btn-success"><a href="http://carrickparish.org{{files.last.path}}" style="color:aliceblue;">Weekly Bulletin (PDF)</a></button><button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
         <ul class="dropdown-menu">
             {% for file in files reversed %}{% if forloop.index < 6 %}{% assign fs = file.path | split: '-' %}{% assign d = file.path | date: "%-d" %}
             <li><a href="http://carrickparish.org{{file.path}}" style="color:aliceblue;">{{fs[3] | | remove: file.extname}}</a></li>{% endif %}{% endfor %}
