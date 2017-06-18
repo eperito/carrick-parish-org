@@ -1,3 +1,4 @@
 +markdown: redcarpet
-+baseurl: /carrick-parish-org
++url: http://www.carrickparish.org
++baseurl:
 +exclude: ['README.md']
